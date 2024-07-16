@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+:root {
+  /* --mfn-clients-tiles-hover: #7ae7c7; */
+  --mfn-icon-box-icon: #7ae7c7;
+  --mfn-sliding-box-bg: #7ae7c7;
+  --mfn-woo-body-color: #626262;
+  --mfn-woo-heading-color: #7ae7c7;
+  --mfn-woo-themecolor: #2c5e61;
+  --mfn-woo-bg-spine: #2c5e61;
+  --mfn-navbar: #182f35;
+}
+/* mobile design section start */
+.table-mobile {
+  background-color: rgb(24, 47, 53);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+.sidebar {
+  display: none;
+}
+.logimg {
+  margin: auto;
+}
+.mobilebtn {
+  display: flex;
+  /* justify-content: end; */
+}
+.mobilebtn > button {
+  display: none;
+  height: 40px;
+  background-color: #626262;
+  color: #7ae7c7;
+  border-radius: 20px;
+  width: 80px;
+  border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobilebtn > button {
+    display: block;
+  }
+}
+.sidebar {
+  height: 600px;
+  background-color: rgb(24, 47, 53);
+  position: fixed;
+  text-align: center;
+}
+li {
+  text-decoration: none;
+  margin: 30px;
+  list-style: none;
+  color: #626262;
+}
+ul {
+  margin-top: 80px;
+}
+.sidebar button {
+  height: 40px;
+  background-color: #626262;
+  color: #7ae7c7;
+  border-radius: 20px;
+  width: 80px;
+  border: none;
+}
+a li:hover {
+  color: #7ae7c7;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    display: block;
+  }
+}
+.herosection {
+  margin-left: 60px;
+}
+.herosection button {
+  margin-left: 80px;
+
+  height: 13px;
+  background-color: #6262622e;
+  color: #7ae7c7;
+  border-radius: 5px;
+  width: 90px;
+  border: none;
+  margin-top: 20px;
+}
+.herosection h1 {
+  color: white;
+  margin-left: 30px;
+}
+.herosection span {
+  color: #7ae7c7;
+}
+.herosection {
+  background-color: #182f35;
+}
+.buttoon1 button {
+  height: 30px;
+  background-color: #7ae7c7;
+  color: #2c5e61;
+  width: 130px;
+  margin-bottom: 20px;
+}
+.image0 {
+  position: relative;
+  margin-left: 60px;
+  animation-name: spine;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation: infinite;
+}
+.images1 {
+  position: absolute;
+  top: 230px;
+  left: 160px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
+}
+.imageball {
+  position: absolute;
+  top: 220px;
+  left: 120px;
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.imageballs {
+  position: absolute;
+  top: 340px;
+  left: 250px;
+}
+@keyframes blink {
+  0% {
+    transform: blink(0deg) translate(-165px) blink(0deg);
+  }
+  100% {
+    transform: blink(60deg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .padwords > p {
+    display: block;
+  }
+}
+.padwords {
+}
